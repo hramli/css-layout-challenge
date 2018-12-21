@@ -1,0 +1,164 @@
+/* =================================
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Varela Round', sans-serif;
+	line-height: 1.6;
+	color: #3a3a3a;
+}
+
+p {
+	font-size: .95em;
+	margin-bottom: 1.8em;
+}
+
+h2,
+h3,
+a {
+	color: #093a58;
+}
+
+h2,
+h3 {
+	margin-top: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+/* =================================
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+header{
+	text-align: center;
+	padding: 1.5em;
+}
+
+.name {
+	font-size: 1.25em;
+	margin-bottom: 1.5em;
+}
+
+.name a,
+.main-nav a {
+	text-align: center;
+}
+
+.main-nav li{
+	padding-bottom: 1em;
+}
+
+.main-nav a {
+	font-size: .95em;
+	color: #3acec2;
+	text-transform: uppercase;
+}
+
+.main-nav a:hover {
+	color: #093a58;
+}
+
+/* ---- Layout Containers ---- */
+
+.banner {
+	color: #fff;
+	background: #3acec2;
+	text-align: center;
+	padding: 2.5em 0 2em;
+	margin-bottom: 2em;
+}
+
+.main-footer {
+	background: #d9e4ea;
+	padding: 2em 0;
+	margin-top: 30px;
+	text-align: center;
+}
+
+.col{
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+/* ---- Page Elements ---- */
+
+.logo {
+	width: 190px;
+}
+
+/* =================================
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+	header{
+		padding: 1.5em;
+	}
+
+	.name{
+		float: left;
+		margin: 0;
+	}
+
+	.main-nav{
+		float: right;
+	}
+
+	.main-nav li{
+		display: inline;
+		margin-left: 1em;
+	}
+
+	.secondary,
+	.primary{
+		width: 50%;
+		display: inline-block;
+		margin-right: -4px;
+		vertical-align: top;
+	}
+
+	/* ---- Float clearfix ---- */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+}
+
+@media (min-width: 950px){
+	.secondary,
+	.tertiary{
+		width: 30%
+	}
+	.primary{
+		width: 40%;
+	}
+
+	.col{
+		display: inline-block;
+		margin-right: -4px;
+		vertical-align: top;
+	}
+
+	/* ---- Float clearfix ---- */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+}
